@@ -2,5 +2,7 @@ mysql:
   image: mysql
   ports:
     - "3306:3306"
+  volumes:
+    - /home/vendor/mysql:/var/lib/mysql
   environment:
     - MYSQL_ALLOW_EMPTY_PASSWORD=true
